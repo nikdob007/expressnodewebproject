@@ -43,7 +43,7 @@ app.get("/about",(req, res) => {
 
 app.get("*", (req, res) => {
     res.render("404", {
-        errorcomment : "Ooops Page Couldn't found"
+        errorcomment : "Ooops Page Couldn't found. Please click here!"
     });
 });
 app.listen(port, (req, res) => {
